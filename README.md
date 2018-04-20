@@ -1,3 +1,6 @@
+
+![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 # tippyjstest
 tippy.js test sample
 a sample file to demonstrate tippy.js for html template.
