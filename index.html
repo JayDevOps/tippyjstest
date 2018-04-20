@@ -1,0 +1,38 @@
+<html>
+<head><title>Tippy Example</title></head>
+<body>
+  <!-- Elements with `title` attributes -->
+  <button class="reference" title="Tooltip">Text</button>
+  <button class="reference" title="Another tooltip">Text</button>
+
+  <button class="reference" title="My tooltip">My button</button>
+
+<button class="reference" title="My tooltip2">My button</button>
+    <h2>templates using data attribute does not show </h2>
+    <h3>tooltip using template 1</h3>
+    <div class="reference2" title="My tooltip3" data-tippy-html="myTemplate1">My div with tooltip using template 1</div>
+
+    <h3>tooltip using template 2</h3>
+    <div class="reference2" title="My tooltip3" data-tippy-html="myTemplate2">My div with tooltip using template 2</div>
+
+    <h2>templates not using data attribute show but it is the same tooltip for all elements </h2>
+    <h3>tooltip using template 1</h3>
+    <div class="reference2" title="My tooltip3" >My div with tooltip using template 1</div>
+
+    <h3>tooltip using template 2</h3>
+    <div class="reference2" title="My tooltip3" >My div with tooltip using template 2</div>
+
+    <div id="myTemplate1" style="display: none;">
+    <h3>Cool <span style="color: pink;">HTML</span> inside here!</h3>
+    </div>
+
+    <div id="myTemplate2" style="display: none;">
+    <h3>Super Cool <span style="color: pink;">HTML</span> inside here!</h3>
+    </div>
+
+  <!-- Include Tippy -->
+  <script src="node_modules/tippy.js/dist/tippy.all.min.js"></script>
+  <!-- Initialize tooltips by calling the `tippy` function with a CSS selector -->
+  <script src="./index.js"></script>
+</body>
+</html>
